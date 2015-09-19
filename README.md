@@ -88,8 +88,9 @@ React.render(<Provider store={Store}>
 
 ## Moving forward
 
-What if you need...
+What if you want...
 
 * [More reducers?](Combining_reducers.md)
 * [Action creators?](Actions.md)
 * [Async actions?](Async.md)
+* [Get rid of switch?](Reducer_objects.md)

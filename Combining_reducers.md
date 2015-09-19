@@ -26,3 +26,7 @@ const Store = createStore(combineReducers({
   counter
 })
 ```
+
+There's also [reduce-reducers] which fulfills a similar use-case.
+
+[reduce-reducers]: https://github.com/acdlite/reduce-reducers
