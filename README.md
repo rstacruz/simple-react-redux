@@ -17,11 +17,12 @@ This store will dispatch any action to any number of reducers that will transfor
 ```js
 import { createStore } from 'redux'
 
-const Store = createStore(function (state = {}, action) {
-  switch (action.type) {
-  case '@@redux/INIT': /* special event emitted by redux */
-    return { ...state, counter: 0 }
+const initial = {
+  counter: 0
+}
 
+const Store = createStore(function (state = initial, action) {
+  switch (action.type) {
   case 'counter:increment':
     return { ...state, counter: state.counter + 1 }
 
