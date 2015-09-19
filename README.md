@@ -83,3 +83,13 @@ React.render(<Provider store={Store}>
   {() => <App />}
 </Provider>, document.getElementById('container'))
 ```
+
+<br>
+
+## Moving forward
+
+What if...
+
+* [You need more reducers?](Combining_reducers.md)
+* [You need action creators?](Actions.md)
+
