@@ -26,6 +26,7 @@ const Store = createStore(function (state = {}, action) {
   case 'counter:set':
     const { value } = action
     return { ...state, counter: value }
+  }
 })
 
 Store.dispatch({ type: 'init' })
