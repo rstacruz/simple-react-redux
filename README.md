@@ -4,6 +4,8 @@ Simple example connecting [redux] and [react-redux] to [React].
 
 This example is more bare-bones compared to other traditional examples. It doesn't have any action constants or any action methods.
 
+Be sure to compile with Babel `--stage 0`.
+
 [React]: https://facebook.github.io/react/
 [redux]: https://www.npmjs.com/package/redux
 [react-redux]: https://www.npmjs.com/package/react-redux
