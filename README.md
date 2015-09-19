@@ -94,3 +94,4 @@ What if you want...
 * [Action creators?](Actions.md)
 * [Async actions?](Async.md)
 * [Get rid of switch?](Reducer_objects.md)
+* [Need a router?](Routing.md)

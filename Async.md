@@ -29,10 +29,17 @@ const Store = myStore((state, action) => {
   switch (action.type) {
     case 'profile:load':
       if (action.error) {
-        /* do something with action.error */
+        /* error. do something with action.error */
+      } else if (action.payload.then) {
+        /* pending */
       } else {
-        /* do something with action.payload */
+        /* success. do something with action.payload */
       }
   }
 })
 ```
+
+Other implementations include:
+
+- [redux-simple-promise](https://github.com/alanrubin/redux-simple-promise)
+- [redux-promise-middleware](https://github.com/pburtchaell/redux-promise-middleware)
