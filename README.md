@@ -2,6 +2,8 @@
 
 Simple example connecting [redux] and [react-redux] to [React].
 
+This example is more bare-bones compared to other traditional examples. It doesn't have any action constants or any action methods.
+
 [React]: https://facebook.github.io/react/
 [redux]: https://www.npmjs.com/package/redux
 [react-redux]: https://www.npmjs.com/package/react-redux
@@ -26,6 +28,9 @@ const Store = createStore(function (state = {}, action) {
   case 'counter:set':
     const { value } = action
     return { ...state, counter: value }
+
+  default:
+    throw new Error('Unknown action: ' + action.type)
   }
 })
 ```
