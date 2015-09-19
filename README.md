@@ -17,7 +17,7 @@ import { createStore } from 'redux'
 
 const Store = createStore(function (state = {}, action) {
   switch (action.type) {
-  case 'init':
+  case '@@redux/INIT': /* special event emitted by redux */
     return { ...state, counter: 0 }
 
   case 'counter:increment':
@@ -28,8 +28,6 @@ const Store = createStore(function (state = {}, action) {
     return { ...state, counter: value }
   }
 })
-
-Store.dispatch({ type: 'init' })
 ```
 
 <br>
